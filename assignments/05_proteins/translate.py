@@ -48,6 +48,7 @@ def main():
     for codon in [seq[i:i + k] for i in range(0, len(seq), k)]:
         print(f"{codon_table.get(codon.upper(), '-')}",
               end='', file=args.outfile)
+    print(f"Output written to \"{args.outfile.name}\".")
 
 
 # --------------------------------------------------
