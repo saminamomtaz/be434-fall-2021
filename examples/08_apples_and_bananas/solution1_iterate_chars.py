@@ -49,6 +49,9 @@ def main():
             new_text.append(char)
     print (char, '->', new_text[-1])
 
+        if char == ' ':
+            new_text.append('\n')
+
     print(''.join(new_text))
 
 
