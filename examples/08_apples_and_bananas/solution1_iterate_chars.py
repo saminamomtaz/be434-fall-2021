@@ -47,6 +47,7 @@ def main():
             new_text.append(vowel.upper())
         else:
             new_text.append(char)
+    print (char, '->', new_text[-1])
 
     print(''.join(new_text))
 
