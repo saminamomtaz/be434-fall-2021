@@ -82,7 +82,7 @@ def main():
     file2_kmer = count_kmers(args.input2, args.kmer)
     common_kmer = set(list(file1_kmer.keys())) & set(list(file2_kmer.keys()))
     for i in common_kmer:
-        print(f"{i:10} {file1_kmer.get(i):5} {file2_kmer.get(i):5}")
+        print(f"{i:10}{file1_kmer.get(i):6}{file2_kmer.get(i):6}")
 
 
 # --------------------------------------------------
