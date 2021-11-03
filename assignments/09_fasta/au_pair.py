@@ -42,10 +42,10 @@ def main():
     os.makedirs(args.outdir, exist_ok=True)
     for files in args.FILE:
         root, ext = os.path.splitext(os.path.basename(files.name))
-        outfile1 = os.path.join(args.outdir, root + '_1' + ext)
-        outfile2 = os.path.join(args.outdir, root + '_2' + ext)
-        with open(outfile1, 'wt', encoding="utf8") as out_fh1:
-            with open(outfile2, 'wt', encoding="utf8") as out_fh2:
+        forward = os.path.join(args.outdir, root + '_1' + ext)
+        reverse = os.path.join(args.outdir, root + '_2' + ext)
+        with open(forward, 'wt', encoding="utf8") as out_fh1:
+            with open(reverse, 'wt', encoding="utf8") as out_fh2:
                 reader = SeqIO.parse(files.name, 'fasta')
                 flag = 0
                 for rec in reader:
