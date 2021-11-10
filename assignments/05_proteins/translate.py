@@ -50,7 +50,6 @@ def main():
               end='', file=args.outfile)
     print(f"Output written to \"{args.outfile.name}\".")
 
-
 # --------------------------------------------------
 if __name__ == '__main__':
     main()

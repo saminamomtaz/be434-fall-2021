@@ -42,7 +42,9 @@ def main():
     out_fh = open(args.outfile, 'wt') if args.outfile else sys.stdout
     out_fh.write(args.text.upper() + '\n')
     out_fh.close()
-
+    #args= get.args()
+    #open(args.outfile).write(args.str.upper())
+    
 
 # --------------------------------------------------
 if __name__ == '__main__':

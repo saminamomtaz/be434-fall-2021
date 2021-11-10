@@ -1,2 +1,2 @@
 test:
-	pytest -xv --pylint --flake8 test.py translate.py
+	pytest -v --pylint --flake8 test.py translate.py

@@ -29,6 +29,12 @@ def main():
         print(jumper.get(char, char), end='')
     print()
 
+# or write like these
+# for char in args.text
+#       if char in jumper
+#           print (jumper [char], end ='')
+#       else:
+#           print(char, end='')
 
 # --------------------------------------------------
 if __name__ == '__main__':

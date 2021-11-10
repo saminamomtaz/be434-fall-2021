@@ -23,8 +23,7 @@ def get_args():
     parser.add_argument('-n',
                         '--number',
                         help='Number the lines',
-                        action='store_true',
-                        default=False)
+                        action='store_true')
     return parser.parse_args()
 
 

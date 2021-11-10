@@ -68,8 +68,12 @@ def main():
     """.strip().split()
 
     for _ in range(args.number):
-        adjs = ', '.join(random.sample(adjectives, k=args.adjectives))
-        print(f'You {adjs} {random.choice(nouns)}!')
+        temp = random.sample(adjectives, k=args.adjectives)
+        adjs = ', '.join(temp)
+        print(temp)
+        # adjs = ', '.join(random.sample(adjectives, k=args.adjectives))
+        # print(f'You {adjs} {random.choice(nouns)}!')
+        print(adjs.split())
 
 
 # --------------------------------------------------
